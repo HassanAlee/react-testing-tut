@@ -1,0 +1,3 @@
+Jest is a Javascript testing framework which finds and runs the test and returns the reports in human readable format.
+React Testing Library is a utility which provides the virtual dom for testing react components.React testing library is a part of Testing library.
+Vid#7:Anatomy of a Test: test(name,fn,timeout).test and expect are provided globally by Jest.
