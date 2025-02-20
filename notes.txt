@@ -1,3 +1,5 @@
 Jest is a Javascript testing framework which finds and runs the test and returns the reports in human readable format.
 React Testing Library is a utility which provides the virtual dom for testing react components.React testing library is a part of Testing library.
 Vid#7:Anatomy of a Test: test(name,fn,timeout).test and expect are provided globally by Jest.
+Vid#8:Created a basic text with Greet component.
+Vid#9:Test Driven Development(TDD) is a software development process where you write test before writing the software code.This approach involves three steps in first just write the test and run and at this point test will fail for sure.In second step write the code and then run the test and in third step optimize the code and making sure all the tests still pass.This is called red-green testing.
