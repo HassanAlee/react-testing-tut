@@ -3,3 +3,6 @@ React Testing Library is a utility which provides the virtual dom for testing re
 Vid#7:Anatomy of a Test: test(name,fn,timeout).test and expect are provided globally by Jest.
 Vid#8:Created a basic text with Greet component.
 Vid#9:Test Driven Development(TDD) is a software development process where you write test before writing the software code.This approach involves three steps in first just write the test and run and at this point test will fail for sure.In second step write the code and then run the test and in third step optimize the code and making sure all the tests still pass.This is called red-green testing.
+Vid#10:Watch mode is an option by jest and it only runs tests present on the files which are changed since the last commit.
+Vid#10:We have multiple ways to filter the test some options are available in the watch mode terminal and apart from those option we can also use skip() and only() method on the global test method to filter the tests.
+Vid#11:We can group tests together using describe(name,fn).We can also use multiple describe in a same file and also skip and only method on describe. We can also nest describe inside another describe.Test suites refers to file not geoup.
