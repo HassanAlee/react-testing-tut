@@ -4,5 +4,19 @@ Vid#7:Anatomy of a Test: test(name,fn,timeout).test and expect are provided glob
 Vid#8:Created a basic text with Greet component.
 Vid#9:Test Driven Development(TDD) is a software development process where you write test before writing the software code.This approach involves three steps in first just write the test and run and at this point test will fail for sure.In second step write the code and then run the test and in third step optimize the code and making sure all the tests still pass.This is called red-green testing.
 Vid#10:Watch mode is an option by jest and it only runs tests present on the files which are changed since the last commit.
-Vid#10:We have multiple ways to filter the test some options are available in the watch mode terminal and apart from those option we can also use skip() and only() method on the global test method to filter the tests.
-Vid#11:We can group tests together using describe(name,fn).We can also use multiple describe in a same file and also skip and only method on describe. We can also nest describe inside another describe.Test suites refers to file not geoup.
+Vid#11:We have multiple ways to filter the test some options are available in the watch mode terminal and apart from those option we can also use skip() and only() method on the global test method to filter the tests.
+Vid#12:We can group tests together using describe(name,fn).We can also use multiple describe in a same file and also skip and only method on describe. We can also nest describe inside another describe.Test suites refers to file not geoup.
+Vid#13:With Jest and RTL we can have three types of file conventions .test.{ts,tsx},.spec(.ts,tsx) or we can have a __tests__ folder and inside it we can place all tests.Generally we should keep the tests with close to the components for whuch the test is. We can also use "it" instead of test method. If were are using it method then for the only we use fit and for skip we use xit.
+Vid#14:Code coverage is a metric that helps to understand how much software code is tested.We can set the setting in package.json to know jest how and which files to cover and not to cover in coverage report:
+            "coverage": "npm test -- --coverage --watchAll --collectCoverageFrom='src/components/**/*.{ts,tsx}' --collectCoverageFrom='!src/components/**/*.{types,stories,constants,test,spec}.{ts,tsx}'"
+We can also set jest threshold like atleast that percentage of code should be covered:
+              "jest": {
+    "coverageThreshold": {
+      "global": {
+        "branches": 80,
+        "functions": 80,
+        "lines": 80,
+        "statements": -10
+      }
+    }
+  }
