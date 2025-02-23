@@ -20,3 +20,4 @@ We can also set jest threshold like atleast that percentage of code should be co
       }
     }
   }
+Vid#16:What to test? We should test that component renders,component renders with props,component renders correctly in different states and component reacts to events.We should not test implementation details,third party code and the code taht is not important for a user's point of view.
