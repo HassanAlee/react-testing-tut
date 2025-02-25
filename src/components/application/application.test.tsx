@@ -4,8 +4,28 @@ import Application from "./Application";
 describe("Application", () => {
   test("renders correctly", () => {
     render(<Application />);
-    const nameElement = screen.getByRole("textbox");
+    const pageHeading = screen.getByRole("heading", {
+      // name: "Job application form",
+      level: 1,
+    });
+    expect(pageHeading).toBeInTheDocument();
+
+    const sectionHeading = screen.getByRole("heading", {
+      // name: "Section 1",
+      level: 2,
+    });
+    expect(sectionHeading).toBeInTheDocument();
+
+    const nameElement = screen.getByRole("textbox", { name: "Name" });
     expect(nameElement).toBeInTheDocument();
+
+    const nameElement2 = screen.getByLabelText("Name", {
+      // selector: "input",this is optional like if we have more than one element with same label text.
+    });
+    expect(nameElement2).toBeInTheDocument();
+
+    const bilElement = screen.getByRole("textbox", { name: "Bio" });
+    expect(bilElement).toBeInTheDocument();
 
     const jobApplicationElement = screen.getByRole("combobox");
     expect(jobApplicationElement).toBeInTheDocument();

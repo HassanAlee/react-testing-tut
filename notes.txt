@@ -23,3 +23,5 @@ We can also set jest threshold like atleast that percentage of code should be co
 Vid#16:What to test? We should test that component renders,component renders with props,component renders correctly in different states and component reacts to events.We should not test implementation details,third party code and the code taht is not important for a user's point of view.
 Vid#17:Queries are the methods that testing library provides to find element on the page.To find single element we have:getBy,queryBy,findBy and for the multiple elements we have getAllBy,queryAllBy and findAllBy.
 Vid#18:getByRole. You can visit the testing library docs and there roles for all the HTML elements are mentioned.
+Vid#19:There are different options that we can pass to getByRole query method. We to pass these options b/c sometimes we may have multiple elements with same role so we need to differentiate between them like we did for input,textarea and headings in our example.There are few other options like selected,checked and disable etc.
+Vid#20:getByLableText query will search for the label text that matches the given text,then find the element associated with that label.
