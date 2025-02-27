@@ -6,10 +6,17 @@ export default function Application() {
       <h1>Job application form</h1>
       <h2>Section 1</h2>
       <p>All fields are mandatory</p>
+      <img src="https://google.com" alt="google image" />
       <form>
         <div>
           <label htmlFor="name">Name</label>
-          <input type="text" id="name" placeholder="Fullname" />
+          <input
+            type="text"
+            id="name"
+            placeholder="Fullname"
+            value="John"
+            onChange={() => {}}
+          />
         </div>
         <div>
           <label htmlFor="bio">Bio</label>

@@ -27,3 +27,5 @@ Vid#19:There are different options that we can pass to getByRole query method. W
 Vid#20:getByLableText query will search for the label text that matches the given text,then find the element associated with that label.
 Vid#21:getByPlaceholderText will look for the element with placeholder attribute and match the given text with placeholder text.
 Vid#22:getByText query methods will search for all the the elements that have a text node with textContent matching the gicen text.Typically used for paragraphs,div or span.
+Vid#23:getByDisplayValue returns the input,textarea or select element that has the matching display value.
+Vid#24:getByAltText will return the element which has the given alt text.img,input area or custom html element.
