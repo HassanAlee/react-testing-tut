@@ -6,7 +6,9 @@ export default function Application() {
       <h1>Job application form</h1>
       <h2>Section 1</h2>
       <p>All fields are mandatory</p>
+      <span title="close">X</span>
       <img src="https://google.com" alt="google image" />
+      <div data-testid="custom-element">Custom HTML Element</div>
       <form>
         <div>
           <label htmlFor="name">Name</label>

@@ -30,6 +30,12 @@ describe("Application", () => {
     const nameElement4 = screen.getByDisplayValue("John");
     expect(nameElement4).toBeInTheDocument();
 
+    const closeElement = screen.getByTitle("close");
+    expect(closeElement).toBeInTheDocument();
+
+    const customElement = screen.getByTestId("custom-element");
+    expect(customElement).toBeInTheDocument();
+
     const imageElement = screen.getByAltText("google image");
     expect(imageElement).toBeInTheDocument();
 

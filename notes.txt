@@ -29,3 +29,5 @@ Vid#21:getByPlaceholderText will look for the element with placeholder attribute
 Vid#22:getByText query methods will search for all the the elements that have a text node with textContent matching the gicen text.Typically used for paragraphs,div or span.
 Vid#23:getByDisplayValue returns the input,textarea or select element that has the matching display value.
 Vid#24:getByAltText will return the element which has the given alt text.img,input area or custom html element.
+Vid#25:getByTitle return the element that has the matching title attribute.
+Vid#26:getByTestId returns the element that has the matching data-testid attribute.
