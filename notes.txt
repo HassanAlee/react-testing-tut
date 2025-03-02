@@ -31,3 +31,5 @@ Vid#23:getByDisplayValue returns the input,textarea or select element that has t
 Vid#24:getByAltText will return the element which has the given alt text.img,input area or custom html element.
 Vid#25:getByTitle return the element that has the matching title attribute.
 Vid#26:getByTestId returns the element that has the matching data-testid attribute.
+Vid#27:Order of queries:getByRole,getByLableText,getByPlaceholderText,getByText,getByDisplayValue,getByAltText,getByTitle,getByTestId.This is the order for writing tests.
+Vid#28:getAllBy** returns an array of all the matching nodes.
